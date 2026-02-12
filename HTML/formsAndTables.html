@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Tables</title>
+</head>
+<body>
+    <header>
+        <h1>Learning about Forms and Tables</h1>
+        <ul>
+            <a href="#section1">
+                <li>How Do Forms, Labels, and Inputs Work in HTML?</li>
+            </a>
+        </ul>
+    </header>
+    <main>
+        <section id="section1">
+            <h2>How Do Forms, Labels, and Inputs Work in HTML?</h2>
+            <!-- example -->
+                <p>
+                    Forms are elements used to gather information from the user (such as name and
+                    email). These rely on input elements to allow the user to fill up
+                    information. As an example, the following element represents a form functionality:
+                </p>
+                <form action="">
+                        <input type="text" />
+                </form>
+                <br>
+            <!-- example -->
+                <p>
+                    Forms support different data types such as regular plain text. We can also add
+                    labels to form input elements. Here's a form with a label element that nests
+                    an input element creating an implicit association between the label and the input
+                    box.
+                </p>
+                <form action="">
+                    <label>
+                        Full Name:
+                        <input type="text" />
+                    </label>
+                </form>
+                <br>
+            <!-- example -->
+                <p>
+                    There's another way to associate a label with an input element, for this purpose
+                    we can use the <code>for=""</code> attribute on the label element, we'll also need to add an <code>id=""</code> 
+                    attribute to the input element in order to associate these two elements.
+                </p>
+                <form action="">
+                    <label for="email">Email address:</label>
+                    <input type="email" id="email">
+                </form>
+                <br>
+            <!-- example -->
+                <p>
+                    On the previous example, we also declared the input data as <code>type="email"</code>
+                    this allows for this input field to have error validators that are common to check
+                    for inaccurate email addresses (If you attempt adding an incomplete email address It'll
+                    prompt an error, further indicating what to fix). Now we'll see the <code>placeholder</code>
+                    attribute which is used to better indicate the user what type of data is expected by
+                    the input element.
+                </p>
+                <form action="">
+                    <label for="email">Email address:</label>
+                    <input type="email" id="email" placeholder="esoto@esportfolio.dev">
+                </form>
+        </section>
+        <section id="section2">
+            <h2></h2>
+        </section>
+    </main>
+</body>
+</html>
