@@ -12,6 +12,9 @@
             <a href="#section1">
                 <li>How Do Forms, Labels, and Inputs Work in HTML?</li>
             </a>
+            <a href="#section2">
+                <li>What Are the Different Types of Buttons, and When Should You Use Them?</li>
+            </a>
         </ul>
     </header>
     <main>
@@ -48,8 +51,8 @@
                     attribute to the input element in order to associate these two elements.
                 </p>
                 <form action="">
-                    <label for="email">Email address:</label>
-                    <input type="email" id="email">
+                    <label for="email1">Email address:</label>
+                    <input type="email" id="email1">
                 </form>
                 <br>
             <!-- example -->
@@ -62,13 +65,75 @@
                     the input element.
                 </p>
                 <form action="">
-                    <label for="email">Email address:</label>
-                    <input type="email" id="email" placeholder="esoto@esportfolio.dev">
+                    <label for="email2">Email address:</label>
+                    <input type="email" id="email2" placeholder="esoto@esportfolio.dev">
                 </form>
+                <br>
         </section>
         <section id="section2">
-            <h2></h2>
+            <h2>What Are the Different Types of Buttons, and When Should You Use Them?</h2>
+            <!-- example -->
+                <p>
+                    The <code>button</code> element is used to perform a particular action when it is clicked
+                    by the user. A <code>button</code> with text indicating it's purpose looks like this:
+                </p>
+                <button>Load more content</button>
+                <br>
+                <br>
+            <!-- example -->
+                <p>
+                    Buttons can be used to trigger different actions such as submitting a form, toggling a side menu
+                    open and closed and multiple other functions that can be programed with the help of
+                    JavaScript. To use a <code>button</code> with mutiple fuctionalies we should declare a 
+                    <code>type=""</code> attribute. Here's an example declaring a button with the <code>type="button"</code>
+                    which will trigger a JavaScript programmed alert once clicked.
+                </p>
+                <button class="alert-btn" type="button">Show Alert</button>
+                <br>
+                <br>
+            <!-- example -->
+                <p>
+                    Another possible value for <code>type</code> attribute within the <code>button</code> element is <code>submit</code>. 
+                    A <code>button</code> of <code>type="submit"</code> once clicked sends data to the server to be processed. An example would be:
+                </p>
+                <form action="" method="post">
+                    <label for="email3">Email address:</label>
+                    <input type="email" name="email3" id="email3">
+                    <button type="submit">Submit Form</button>
+                </form>
+                <br>
+            <!-- example -->
+                <p>
+                    There's one more value for the <code>type</code> attribute which is <code>reset</code>. 
+                    The purpose of this attribute is to erase all inserted data within the form. 
+                    This can be useful for the user if they realize they made mistakes while filling up a form. 
+                    However, it's important to note that once clicked all introduced data will be permanently 
+                    erased and users may mistakenly click this button; therefore is not often included
+                    on forms. Here's an example of a form that includes the reset button.
+                </p>
+                <form action="" method="post">
+                    <label for="email4">Email address:</label>
+                    <input type="email" name="email4" id="email4">
+                    <button type="submit">Submit Form</button>
+                    <button type="reset">Reset Form</button>
+                </form>
+                <br>
+            <!-- example -->
+                <p>
+                    One more thing; another way to create buttons in HTML is by using <code>input</code> elements. 
+                    This element also has a <code>type</code> attribute with the same possible values available such as, 
+                    <code>submit</code>, <code>reset</code> and <code>button</code>. 
+                    A key difference that you should note while using the input element as a button is
+                    that it is a void element which doesn't support nesting of other elements, which may
+                    reduce versatility of use. Here's an input button which triggers a Javascript fuctionality to
+                    display a text to the user.
+                </p>
+                <input class="start-btn" type="button" value="Start Game" />
+                <br>
+                <br>
         </section>
+
     </main>
+    <script src="../JS/formsAndTables.js"></script>
 </body>
 </html>
