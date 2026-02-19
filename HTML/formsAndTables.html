@@ -146,7 +146,9 @@
                     the back-end or server side for added security. One example of form validation
                     is the <code>required</code> attribute with <code>input</code> elements.
                     This attribute specifies that the user needs to fill up an specific form field, 
-                    before they are able to send the form. Here's an example:
+                    before they are able to send the form. Form validation is also enforced by
+                    the field <code>type=""</code> attribute. Here's an example of a <code>type="email"</code>
+                    <code>required</code> field (if you try sending the form empty or without an email it will fail).
                 </p>
                 <form action="">
                     <label for="email5">Email Address (Required field):</label>
@@ -154,17 +156,11 @@
                     <button type="submit">Submit Form</button>
                 </form>
                 <br>
-            <!-- example -->
-                <p>
-                    Form validation is also enforced on the type="email" attribute,
-                    for this example you'll be able to notice that 
-                </p>
-                <form action="">
-                    <label for="email5">Email Address (Required field):</label>
-                    <input required type="email" name="email5" id="email5">
-                    <button type="submit">Submit Form</button>
-                </form>
-                <br>
+        </section>
+        <section id="section4">
+            <h2>Building a Hotel Feedback Form</h2>
+            
+            <br>
         </section>
 
     </main>
