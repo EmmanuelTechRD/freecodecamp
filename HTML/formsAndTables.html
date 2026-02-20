@@ -18,6 +18,18 @@
             <a href="#section3">
                 <li>What Is Client-Side Form Validation in HTML Forms, and What Are Some Examples?</li>
             </a>
+            <a href="#section4">
+                <li>Building a Hotel Feedback Form</li>
+            </a>
+            <a href="#section5">
+                <li>What Are HTML Tables Used For, and What Should They Not Be Used For?</li>
+            </a>
+            <a href="#section6">
+                <li>Building a Final Exams Table</li>
+            </a>
+            <a href="#section7">
+                <li>Building a Book Catalog Table</li>
+            </a>
         </ul>
     </header>
     <main>
@@ -158,9 +170,208 @@
                 <br>
         </section>
         <section id="section4">
-            <h2>Building a Hotel Feedback Form</h2>
-            
-            <br>
+            <!-- exercise header -->
+                <h2>Building a Hotel Feedback Form</h2>
+                <p>Thank you for staying with us. Please provide feedback on your recent stay.</p>
+            <!-- exercise main -->
+                <form action="https://hotel-feedback.freecodecamp.org" method="POST">
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <label for="full-name">Name (required):</label>
+                        <input type="text" name="name" id="full-name" placeholder="e.g., John Doe" size="20" required>
+                        <label for="email">Email address (required):</label>
+                        <input type="email" name="email" id="email" placeholder="esoto@esportfolio.dev" size="20" required>
+                        <label for="age">Age (optional):</label>
+                        <input type="number" name="age" id="age" min="3" max="100">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Was this your first time at our hotel?</legend>
+                        <input type="radio" name="hotel-stay" id="yes-option" value="yes">
+                        <label for="yes-option">Yes</label>
+                        <input type="radio" name="hotel-stay" id="no-option" value="no">
+                        <label for="no-option">No</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Why did you choose to stay at our hotel? (Check all that apply)</legend>
+                        <input type="checkbox" name="choice" id="ads" value="ads">
+                        <label for="ads">Social Media Ads</label>
+                        <input type="checkbox" name="choice" id="recommendation" value="recommendation">
+                        <label for="recommendation">Personal Recommendation</label>
+                        <input type="checkbox" name="choice" id="location" value="location">
+                        <label for="location">Location</label>
+                        <input checked type="checkbox" name="choice" id="reputation" value="reputation">
+                        <label for="reputation">Reputation</label>
+                        <input type="checkbox" name="choice" id="price" value="price">
+                        <label for="price">Price</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Ratings</legend>
+                        <label for="service">How was the service?</label>
+                        <select name="service" id="service">
+                            <option value="poor">Poor</option>
+                            <option value="satisfactory">Satisfactory</option>
+                            <option value="good">Good</option>
+                            <option value="very-good">Very Good</option>
+                            <option selected value="excellent">Excellent</option>
+                        </select>
+                        <label for="food">How was the food?</label>
+                        <select name="food" id="food">
+                            <option value="poor">Poor</option>
+                            <option value="satisfactory">Satisfactory</option>
+                            <option value="good">Good</option>
+                            <option value="very-good">Very Good</option>
+                            <option selected value="excellent">Excellent</option>
+                        </select>
+                        <label for="comments">Other Comments?</label>
+                        <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+                        <button type="submit">Submit</button>
+                    </fieldset>
+                </form>
+        </section>
+        <section id="section5">
+            <!-- exercise header -->
+                <br>
+                <h2>What Are HTML Tables Used For, and What Should They Not Be Used For?</h2>
+            <!-- exercise main -->
+                <p>
+                    HTML Tables are used for presenting tabular data. Many years ago, developers might have used a <code>table</code> to
+                    position non-data elements on a webpage. This was never considered a best practice. But we may encounter some codebases 
+                    where tables are still used like this. Nowadays, developers use CSS flexbox and grid to layout their designs. We should
+                    just use HTML tables for their original intended purpose: displaying tabular data. As you can see, there's a main <code>table</code> 
+                    element. Inside it, the table has a table head element, <code>thead</code>, table body element, <code>tbody</code>, and a table 
+                    foot element, <code>tfoot</code>. The table head, body, and foot elements can each contain some number of table rows, <code>tr</code>. 
+                    And each table row can contain a table header <code>th</code> which labels the data in that row. It can also contain some number of 
+                    individual data cells, called table data, <code>td</code>. Here's the simplest table we can create that includes all of these elements:
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>The title of this table</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>First Row</th>
+                        <td>
+                            First Data Cell
+                        </td>
+                        </tr>
+                        <tr>
+                            <th>Second Row</th>
+                        <td>
+                            Second Data Cell
+                        </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>The footer of this table, which might contain date of publication, author credits, or other meta information.</th>
+                        </tr>
+                    </tfoot>
+                </table>
+        </section>
+        <section id="section6">
+            <!-- exercise header -->
+                <br>
+                <h2>Building a Final Exams Table</h2>
+            <!-- exercise main -->
+                <table>
+                    <caption>Calculus Final Exam Grades</caption>
+                    <thead>
+                        <tr>
+                            <th>Last Name</th>
+                            <th>First Name</th>
+                            <th>Grade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Davis</td>
+                            <td>Alex</td>
+                            <td>54</td>
+                        </tr>
+                        <tr>
+                            <td>Doe</td>
+                            <td>Samantha</td>
+                            <td>92</td>
+                        </tr>
+                        <tr>
+                            <td>Rodriguez</td>
+                            <td>Marcus</td>
+                            <td>88</td>
+                        </tr>
+                        <tr>
+                            <td>Thompson</td>
+                            <td>Jane</td>
+                            <td>77</td>
+                        </tr>
+                        <tr>
+                            <td>Williams</td>
+                            <td>Natalie</td>
+                            <td>83</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">Average Grade</td>
+                            <td>78.8</td>
+                        </tr>
+                    </tfoot>
+                </table>
+        </section>
+        <section id="section7">
+            <!-- example header -->
+                <br>
+                <h2>Building a Book Catalog Table</h2>
+            <!-- example main -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Author</th>
+                            <th>Genre</th>
+                            <th>Publication Year</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>James</td>
+                            <td>Percival Everett</td>
+                            <td>Historical Fiction</td>
+                            <td>2024</td>
+                        </tr>
+                        <tr>
+                            <td>Sunrise on the Reaping</td>
+                            <td>Suzanne Collins</td>
+                            <td>Dystopian / YA</td>
+                            <td>2025</td>
+                        </tr>
+                        <tr>
+                            <td>Land</td>
+                            <td>Maggie O’Farrell</td>
+                            <td>Historical Fiction</td>
+                            <td>2026</td>
+                        </tr>
+                        <tr>
+                            <td>The God of the Woods</td>
+                            <td>Liz Moore</td>
+                            <td>Mystery / Thriller</td>
+                            <td>2024</td>
+                        </tr>
+                        <tr>
+                            <td>The Castle</td>
+                            <td>Franz Kafka</td>
+                            <td>Absurdist Fiction</td>
+                            <td>1926</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4">Total Books: 5</td>
+                        </tr>
+                    </tfoot>
+                </table>
+
         </section>
 
     </main>
