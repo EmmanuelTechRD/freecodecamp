@@ -20,14 +20,17 @@
                 <a href="#section3">
                     <li>Building a Tech Conference Schedule Table</li>
                 </a>
+                <a href="#section4">
+                    <li>Debugging a Donation Form</li>
+                </a>
             </ul>
         </nav>
     </header>
     <main>
         <section id="section1">
             <!-- header -->
-                <br>
                 <h2>Importance of Accessibility and Good HTML Structure</h2>
+
             <!-- main -->
                 <p>
                     Automated accessibility tools have a role in improving accessibility, but for most 
@@ -39,7 +42,6 @@
         </section>
         <section id="section2">
             <!-- header -->
-                <br>
                 <h2>Debuging a Coding Journey Blog Page</h2>
                 <p>
                     This exercise was about debuging and fixing a coding journey blog page that had some accessibility issues and bad practices.
@@ -142,6 +144,44 @@
                         </tr>
                     </tbody>
                 </table>
+        </section>
+        <section id="section4">
+            <!-- header -->
+                <br>
+                <h2>Debugging a Donation Form</h2>
+                <p>
+                    This exercise was about debugging a form, simulating the scenario of a local charity
+                    that built a form with many accessibility and HTML syntax issues. All errors were
+                    fixed.
+                </p>
+
+                <h2>Donation Form</h2>
+
+            <!-- body -->
+                <form>
+    
+                    <label for="name_section4">
+                        Full Name:
+                        <input type="text" name="name" id="name_section4" required>
+                    </label>
+
+                    <label for="email_section4">
+                        Email Address:
+                        <input type="email" name="email" id="email_section4" required>
+                    </label>
+
+                    <label for="amount_section4">
+                        Donation Amount ($):
+                        <input type="number" name="amount" id="amount_section4" required>
+                    </label>
+
+                    <label for="checkbox_section4">
+                        <input type="checkbox" name="newsletter" id="checkbox_section4">
+                        Subscribe
+                    </label>
+
+                    <input type="submit" value="Send">
+                </form>
         </section>
     </main>
 </body>
