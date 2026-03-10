@@ -23,6 +23,9 @@
                 <a href="#section4">
                     <li>Debugging a Donation Form</li>
                 </a>
+                <a href="#section5">
+                    <li>Building an Accessible Audio Controller</li>
+                </a>
             </ul>
         </nav>
     </header>
@@ -182,6 +185,27 @@
 
                     <input type="submit" value="Send">
                 </form>
+        </section>
+        <section id="section5">
+            <!-- header -->
+                <br>
+                <h2>Building an Accessible Audio Controller</h2>
+                <p>In this practice I'll be working with ARIA by building an accessible audio controller.</p>
+
+                <h2>Audio Controls</h2>
+
+            <!-- body -->
+                <button type="button">Play</button>
+                <div>
+                    <br>
+                    <span id="volume-label">Volume</span>
+                    <br>
+                    <span id="volume-description">Adjust the sound level</span>
+                    <br>
+                    <input type="range" name="" id="" min="0" max="100" value="50" aria-labelledby="volume-label volume-description">
+                    <br>
+                    <button type="button">Mute</button>
+                </div>
         </section>
     </main>
 </body>
