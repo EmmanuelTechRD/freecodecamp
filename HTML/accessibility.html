@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning about Accessibility in HTML</title>
 </head>
+
 <body>
     <header>
         <h1>Learning about Accessibility in HTML</h1>
@@ -26,187 +28,318 @@
                 <a href="#section5">
                     <li>Building an Accessible Audio Controller</li>
                 </a>
+                <a href="#section6">
+                    <li>Building a Checkout Page</li>
+                </a>
+                <a href="#section7">
+                    <li>Designing a Movie Review Page</li>
+                </a>
+                <a href="#section8">
+                    <li>Building a Multimedia Player</li>
+                </a>
             </ul>
         </nav>
     </header>
     <main>
         <section id="section1">
             <!-- header -->
-                <h2>Importance of Accessibility and Good HTML Structure</h2>
+            <h2>Importance of Accessibility and Good HTML Structure</h2>
 
             <!-- main -->
-                <p>
-                    Automated accessibility tools have a role in improving accessibility, but for most 
-                    cases they will only find about a third of all possible accessibility issues. Therefore, 
-                    it is important not to rely on them entirely to evaluate the accessibility of your content. 
-                    Manual testing, preferably by people with disabilities, will always be required to ensure that 
-                    your content is as accessible as possible.
-                </p>
+            <p>
+                Automated accessibility tools have a role in improving accessibility, but for most
+                cases they will only find about a third of all possible accessibility issues. Therefore,
+                it is important not to rely on them entirely to evaluate the accessibility of your content.
+                Manual testing, preferably by people with disabilities, will always be required to ensure that
+                your content is as accessible as possible.
+            </p>
         </section>
         <section id="section2">
             <!-- header -->
-                <h2>Debuging a Coding Journey Blog Page</h2>
-                <p>
-                    This exercise was about debuging and fixing a coding journey blog page that had some accessibility issues and bad practices.
-                </p>
-                
-                <h3>Welcome to Camperbot's Blog</h3>
-                <nav>
-                    <h4>Navigation</h4>
-                    <ul>
-                        <li><a href="#post1">My Journey</a></li>
-                        <li><a href="#post2">Accessibility</a></li>
-                        <li><a href="#post3">Next Steps</a></li>
-                    </ul>
-                </nav>
+            <h2>Debuging a Coding Journey Blog Page</h2>
+            <p>
+                This exercise was about debuging and fixing a coding journey blog page that had some accessibility
+                issues and bad practices.
+            </p>
+
+            <h3>Welcome to Camperbot's Blog</h3>
+            <nav>
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#post1">My Journey</a></li>
+                    <li><a href="#post2">Accessibility</a></li>
+                    <li><a href="#post3">Next Steps</a></li>
+                </ul>
+            </nav>
 
             <!-- main -->
-                <article>
-                    <h3 id="post1">My Journey Learning to Code</h3>
-                    <p>Hi, I am Mr. Camperbot. I started learning to code a few months ago, and it's been a wild ride!</p>
-                    
-                    <h4>Early Challenges</h4>
-                    <p>At first, syntax was really confusing.</p>
-                    
-                    <h4>Breakthroughs</h4>
-                    <p>Eventually things started to click.</p>
-                </article>
+            <article>
+                <h3 id="post1">My Journey Learning to Code</h3>
+                <p>Hi, I am Mr. Camperbot. I started learning to code a few months ago, and it's been a wild ride!</p>
 
-                <article>
-                    <h3 id="post2">Accessibility Matters</h3>
-                    <p>Today I learned that not everyone uses the web the same way I do.</p>
+                <h4>Early Challenges</h4>
+                <p>At first, syntax was really confusing.</p>
 
-                    <h4>Screen Readers</h4>
-                    <p>These tools help visually impaired users browse websites.</p>
-                </article>
+                <h4>Breakthroughs</h4>
+                <p>Eventually things started to click.</p>
+            </article>
 
-                <article>
-                    <h3 id="post3">What's Next?</h3>
-                    <p>I'm excited to dive into JavaScript and build interactive features!</p>
+            <article>
+                <h3 id="post2">Accessibility Matters</h3>
+                <p>Today I learned that not everyone uses the web the same way I do.</p>
 
-                    <h4>Coming soon: My first JavaScript project!</h4>
-                    <p>Stay tuned for some exciting interactive blog features.</p>
-                </article>
+                <h4>Screen Readers</h4>
+                <p>These tools help visually impaired users browse websites.</p>
+            </article>
 
-                <footer>
-                    <h3>Contact Me</h3>
-                    <p>Email me at <a href="mailto:camperbot@blog.io">camperbot@blog.io</a></p>
-                </footer>
+            <article>
+                <h3 id="post3">What's Next?</h3>
+                <p>I'm excited to dive into JavaScript and build interactive features!</p>
+
+                <h4>Coming soon: My first JavaScript project!</h4>
+                <p>Stay tuned for some exciting interactive blog features.</p>
+            </article>
+
+            <footer>
+                <h3>Contact Me</h3>
+                <p>Email me at <a href="mailto:camperbot@blog.io">camperbot@blog.io</a></p>
+            </footer>
         </section>
         <section id="section3">
             <!-- header -->
-                <br>
-                <h2>Building a Tech Conference Schedule Table</h2>
-                <p>This exercise was about learning how to make table elements accessible for all users.</p>
+            <br>
+            <h2>Building a Tech Conference Schedule Table</h2>
+            <p>
+                This exercise was about learning how to make table elements accessible for all users.
+            </p>
 
-                <h3>Tech Conference 2026 Schedule</h3>
+            <h3>Tech Conference 2026 Schedule</h3>
 
             <!-- main -->
-                <table>
-                    <caption>Schedule by Track and Time</caption>
-                    <thead>
-                        <tr>
-                            <th scope="col">Time</th>
-                            <th scope="col">Track A</th>
-                            <th scope="col">Track B</th>
-                            <th scope="col">Track C</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">9:00 AM</th>
-                            <td>Keynote: Tech Future</td>
-                            <td>Intro to Web Dev</td>
-                            <td>UX for All</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">10:00 AM</th>
-                            <td>Accessibility Deep Dive</td>
-                            <td>CSS for Beginners</td>
-                            <td>Inclusive Design Principles</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">11:00 AM</th>
-                            <td colspan="3">Break</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">11:30 AM</th>
-                            <td>AR/VR in Education</td>
-                            <td>JavaScript Fundamentals</td>
-                            <td>Design Systems at Scale</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">12:30 PM</th>
-                            <td colspan="3">Lunch Break</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2:00 PM</th>
-                            <td>Voice UI Workshop</td>
-                            <td>Git & GitHub Essentials</td>
-                            <td>Color & Contrast in UI</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <table>
+                <caption>Schedule by Track and Time</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Time</th>
+                        <th scope="col">Track A</th>
+                        <th scope="col">Track B</th>
+                        <th scope="col">Track C</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">9:00 AM</th>
+                        <td>Keynote: Tech Future</td>
+                        <td>Intro to Web Dev</td>
+                        <td>UX for All</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">10:00 AM</th>
+                        <td>Accessibility Deep Dive</td>
+                        <td>CSS for Beginners</td>
+                        <td>Inclusive Design Principles</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">11:00 AM</th>
+                        <td colspan="3">Break</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">11:30 AM</th>
+                        <td>AR/VR in Education</td>
+                        <td>JavaScript Fundamentals</td>
+                        <td>Design Systems at Scale</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">12:30 PM</th>
+                        <td colspan="3">Lunch Break</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2:00 PM</th>
+                        <td>Voice UI Workshop</td>
+                        <td>Git & GitHub Essentials</td>
+                        <td>Color & Contrast in UI</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
         <section id="section4">
             <!-- header -->
-                <br>
-                <h2>Debugging a Donation Form</h2>
-                <p>
-                    This exercise was about debugging a form, simulating the scenario of a local charity
-                    that built a form with many accessibility and HTML syntax issues. All errors were
-                    fixed.
-                </p>
+            <br>
+            <h2>Debugging a Donation Form</h2>
+            <p>
+                This exercise was about debugging a form, simulating the scenario of a local charity
+                that built a form with many accessibility and HTML syntax issues. All errors were
+                fixed.
+            </p>
 
-                <h2>Donation Form</h2>
+            <h3>Donation Form</h3>
 
-            <!-- body -->
-                <form>
-    
-                    <label for="name_section4">
-                        Full Name:
-                        <input type="text" name="name" id="name_section4" required>
-                    </label>
+            <!-- main -->
+            <form>
 
-                    <label for="email_section4">
-                        Email Address:
-                        <input type="email" name="email" id="email_section4" required>
-                    </label>
+                <label for="name_section4">
+                    Full Name:
+                    <input type="text" name="name" id="name_section4" required>
+                </label>
 
-                    <label for="amount_section4">
-                        Donation Amount ($):
-                        <input type="number" name="amount" id="amount_section4" required>
-                    </label>
+                <label for="email_section4">
+                    Email Address:
+                    <input type="email" name="email" id="email_section4" required>
+                </label>
 
-                    <label for="checkbox_section4">
-                        <input type="checkbox" name="newsletter" id="checkbox_section4">
-                        Subscribe
-                    </label>
+                <label for="amount_section4">
+                    Donation Amount ($):
+                    <input type="number" name="amount" id="amount_section4" required>
+                </label>
 
-                    <input type="submit" value="Send">
-                </form>
+                <label for="checkbox_section4">
+                    <input type="checkbox" name="newsletter" id="checkbox_section4">
+                    Subscribe
+                </label>
+
+                <input type="submit" value="Send">
+            </form>
         </section>
         <section id="section5">
             <!-- header -->
+            <br>
+            <h2>Building an Accessible Audio Controller</h2>
+            <p>
+                In this practice I'll be applying Accessible Rich Internet Applications (ARIA) on building an accessible
+                audio controller.
+            </p>
+
+            <h3>Audio Controls</h3>
+
+            <!-- main -->
+            <button type="button">Play</button>
+            <div>
                 <br>
-                <h2>Building an Accessible Audio Controller</h2>
-                <p>In this practice I'll be working with ARIA by building an accessible audio controller.</p>
+                <span id="volume-label">Volume</span>
+                <br>
+                <span id="volume-description">Adjust the sound level</span>
+                <br>
+                <input type="range" name="" id="" min="0" max="100" value="50"
+                    aria-labelledby="volume-label volume-description">
+                <br>
+                <button type="button">Mute</button>
+            </div>
+        </section>
+        <section id="section6">
+            <!-- header -->
+            <br>
+            <h2>Building a Checkout Page</h2>
+            <p>
+                This exercise was about building a Checkout Page with best accessibility practices.
+            </p>
 
-                <h2>Audio Controls</h2>
+            <h3>Checkout</h3>
 
-            <!-- body -->
-                <button type="button">Play</button>
-                <div>
-                    <br>
-                    <span id="volume-label">Volume</span>
-                    <br>
-                    <span id="volume-description">Adjust the sound level</span>
-                    <br>
-                    <input type="range" name="" id="" min="0" max="100" value="50" aria-labelledby="volume-label volume-description">
-                    <br>
-                    <button type="button">Mute</button>
-                </div>
+            <!-- main -->
+            <section>
+                <h4>Your Cart</h4>
+                <img src="https://cdn.freecodecamp.org/curriculum/labs/cube.jpg" alt="A rubik's cube illustration">
+            </section>
+            <section>
+                <h4>Payment Information</h4>
+                <form action="">
+                    <div style="margin: 12px 0;">
+                        <label for="card-name"><span aria-hidden="true" style="color: red;">*</span> Card Name:</label>
+                        <input type="text" name="card-name" id="card-name" required>
+                    </div>
+
+                    <label for="card-number"><span aria-hidden="true" style="color: red;">*</span> Card Number:</label>
+                    <input type="text" aria-describedby="card-number-help" name="card-number" id="card-number" required>
+
+                    <p id="card-number-help">Enter your 16-digit card number without spaces or dashes.</p>
+
+                    <input type="submit" accesskey="s" value="Process Payment (Alt + S)">
+                </form>
+            </section>
+        </section>
+        <section id="section7">
+            <!-- header -->
+            <br>
+            <h2>Designing a Movie Review Page</h2>
+            <p>
+                This exercise was about building a Movie Review Page with best accessibility practices.
+            </p>
+
+            <h3>Movie Review</h3>
+            <!-- main -->
+            <h3>The Karate Kid</h3>
+            <img width="300"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk2n7eVwmAcWfMedDKGlLYtroeDVUznzpj_cEBj5T2Ejgvk33Rx0PvZmpvjpKpya61R8WN&s=10"
+                alt="The Karate Kid: Movie Poster featuring its main characters Daniel and Mr. Miyagi based on an scenario illustrating martial arts.">
+            <p>
+                The Karate Kid Movie: Centers on the mentorship between a young student and a wise martial arts master
+                to overcome bullying and personal challenges.
+            </p>
+            <p>
+                <strong>Movie Rating:</strong> <span aria-hidden="true">⭐⭐⭐⭐⭐⭐⭐⭐⭐☆</span> (9.4/10)
+            </p>
+
+            <h3>Cast Members</h3>
+            <ul>
+                <li>
+                    <strong>Ralph Macchio</strong> as Daniel LaRusso
+                </li>
+                <li>
+                    <strong>Pat Morita</strong> as Mr. Miyagi
+                </li>
+                <li>
+                    <strong>William Zabka</strong> as Johnny Lawrence
+                </li>
+                <li>
+                    <strong>Jackie Chan</strong> as Mr. Han
+                </li>
+                <li>
+                    <strong>Jaden Smith</strong> as Dre Parker
+                </li>
+            </ul>
+        </section>
+        <section id="section8">
+            <!-- header -->
+            <br>
+            <h2>Building a Multimedia Player</h2>
+            <p>
+                This exercise was about building out a multimedia player that displays an audio track and a video with a
+                transcript.
+            </p>
+
+            <h3>Multimedia Player</h3>
+            <!-- main -->
+            <section>
+                <h3>Sailing Away</h3>
+                <audio controls aria-label="Audio player reproducing the song Sailing Away.">
+                    <source src="https://cdn.freecodecamp.org/curriculum/js-music-player/sailing-away.mp3"
+                        type="audio/mp3">
+                </audio>
+            </section>
+
+            <section>
+                <h3>What is the map method and how does it work?</h3>
+                <video controls width="600"
+                    aria-label="Video player reproducing a video about the map method and how does it works.">
+                    <source
+                        src="https://cdn.freecodecamp.org/curriculum/labs/what-is-the-map-method-and-how-does-it-work.mp4"
+                        type="video/mp4">
+                    <track
+                        src="https://cdn.freecodecamp.org/curriculum/labs/what-is-the-map-method-and-how-does-it-work.vtt"
+                        kind="subtitles" srclang="en" label="English">
+                </video>
+            </section>
+            <section>
+                <h3>Transcript</h3>
+                <p>
+                    What is a map method and how does it work? The map method is a powerful and widely used function in
+                    JavaScript that operates on arrays. It's designed to create a new array by applying a given function
+                    to each element of the original array. This method does not modify the original array, but instead
+                    returns the new array containing the results of the function applied to each element.
+                </p>
+            </section>
         </section>
     </main>
 </body>
+
 </html>
