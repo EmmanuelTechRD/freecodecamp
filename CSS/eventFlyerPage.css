@@ -1,0 +1,17 @@
+body {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    text-align: center;
+    width: 100vw;
+    min-height: calc(100vh - 100px)
+}
+
+section {
+    width: 49%;
+    display: inline-block;
+}
+
+hr {
+    width: 60%;
+}
