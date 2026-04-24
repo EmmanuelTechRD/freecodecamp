@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building a Job Application Form - freeCodeCamp CSS Course</title>
+
+    <link rel="stylesheet" href="../CSS/jobApplicationForm.css">
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <label for="name">Enter your name:</label>
+            <input type="text" id="name">
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email">
+            <label for="position">Choose a position:</label>
+            <select id="position">
+                <option value="sales">Sales Man</option>
+                <option value="support">Customer Support</option>
+                <option value="finance">Payroll and Finance</option>
+            </select>
+            <fieldset class="radio-group">
+                <legend>What's your availability?</legend>
+                <input type="radio" name="availability" id="radio1" value="full-time">
+                <label class="availability" for="radio1">Full-Time</label>
+                <input type="radio" name="availability" id="radio2" value="part-time">
+                <label class="availability" for="radio2">Part-Time</label>
+            </fieldset>
+            <textarea name="" id="message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>
