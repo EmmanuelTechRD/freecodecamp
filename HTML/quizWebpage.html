@@ -51,14 +51,77 @@
                 <h2 id="html-questions">
                     HTML questions
                 </h2>
+                <div class="question-block">
+                    <h3><span class="sr-only">Question</span>1</h3>
+                    <fieldset class="question" name="question1">
+                        <legend>Is HTML a programming language?</legend>
+                        <ul class="answers-list">
+                            <li>
+                                <label for="q1-a1">
+                                    <input type="radio" name="q1" id="q1-a1" value="True"> True
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q1-a2">
+                                    <input type="radio" name="q1" id="q1-a2" value="False"> False
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <div class="question-block">
+                    <h3><span class="sr-only">Question</span>2</h3>
+                    <fieldset class="question" name="question2">
+                        <legend>Does HTML stands for HyperText Markup Language?</legend>
+                        <ul class="answers-list">
+                            <li>
+                                <label for="q2-a1">
+                                    <input type="radio" name="q2" id="q2-a1" value="True"> True
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q2-a2">
+                                    <input type="radio" name="q2" id="q2-a2" value="False"> False
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
             </section>
             <section role="region" aria-labelledby="css-questions">
                 <h2 id="css-questions">
                     CSS questions
                 </h2>
+                <div class="formrow">
+                    <div class="question-block">
+                        <label for="css-q1">Does CSS stands for Cascading Style Sheets?</label>
+                    </div>
+                    <div class="answer">
+                        <select name="css-q1" id="css-q1" required>
+                            <option value="">Select an option</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                    <div class="question-block">
+                        <label for="css-q2">Is CSS a markup language?</label>
+                    </div>
+                    <div class="answer">
+                        <textarea name="css-q2" id="css-q2" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
             </section>
+            <button type="submit">Send</button>
         </form>
     </main>
+    <footer>
+        <address>
+            <a href="https://freecodecamp.org">freeCodeCamp</a><br />
+            San Francisco<br />
+            California<br />
+            USA
+        </address>
+    </footer>
 
 </body>
 
