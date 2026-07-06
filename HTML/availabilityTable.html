@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building an Availability Table - freeCodeCamp CSS Course</title>
+
+    <link rel="stylesheet" href="../CSS/availabilityTable.css">
+</head>
+
+<body>
+    <main>
+        <!-- header -->
+        <h1>On-Call Engineers: Wednesday to Friday availability</h1>
+        <!-- table -->
+        <table>
+            <tbody>
+                <tr class="sharp">
+                    <th rowspan="2" class="time">9 AM</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                </tr>
+                <tr class="half">
+                    <td class="available-5"></td>
+                    <td class="available-0"></td>
+                    <td class="available-2"></td>
+                </tr>
+                <tr class="sharp">
+                    <th rowspan="2" class="time">10 AM</th>
+                    <td class="available-0"></td>
+                    <td class="available-4"></td>
+                    <td class="available-3"></td>
+                </tr>
+                <tr class="half">
+                    <td class="available-3"></td>
+                    <td class="available-2"></td>
+                    <td class="available-0"></td>
+                </tr>
+                <tr class="sharp">
+                    <th rowspan="2" class="time">11 AM</th>
+                    <td class="available-4"></td>
+                    <td class="available-0"></td>
+                    <td class="available-3"></td>
+                </tr>
+                <tr class="half">
+                    <td class="available-3"></td>
+                    <td class="available-4"></td>
+                    <td class="available-0"></td>
+                </tr>
+                <tr class="sharp">
+                    <th rowspan="2" class="time">12 PM</th>
+                    <td class="available-0"></td>
+                    <td class="available-3"></td>
+                    <td class="available-2"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- legend -->
+        <div id="legend">
+            <span id="legend-title">
+                Availability
+            </span>
+            <div id="legend-line">
+                <span>0</span>
+                <div id="legend-gradient"></div>
+                <span>5+</span>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
