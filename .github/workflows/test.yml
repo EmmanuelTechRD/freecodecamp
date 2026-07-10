@@ -1,0 +1,24 @@
+name: Python Code Testing
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'dailyCodingChallenge/**.py'
+
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out repository code
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    - name: Run All Python Unit Tests
+      run: python -m unittest discover -s dailyCodingChallenge -p "test_*.py"
