@@ -1,3 +1,10 @@
+# freeCodeCamp challenge: Birthday Countdown
+# Given today's date and a birthday, return the number of days until the person's next birthday.
+# Today's date is given as a string in "YYYY-MM-DD" format, with leading zeros, for example: "2026-07-16".
+# The birthday is given as a string in "M/D" format, without leading zeros, for example: "9/7".
+# If today is their birthday, return the number of days until their next birthday (not 0).
+# Leap years should be accounted for.
+
 import datetime
 
 def days_until_birthday(today, birthday):
@@ -28,5 +35,3 @@ def days_until_birthday(today, birthday):
             pass
         
             test_year += 1
-
-print(days_until_birthday("2026-07-16", "9/7"))
